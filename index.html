@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-Ticket</title>
+    <link rel="shortcut icon" href="icon/Rental Partners.svg" type="image/x-icon">
+    <!-- Daisy Ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- style -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="font-raleway">
+    <header class="lg:max-w-[1280px] m-auto">
+        <!-- nav section -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                       <li><a>About</a></li>
+                      <li><a>Destination</a></li>
+                      <li><a>Search</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-xl lg:text-4xl font-extrabold">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 gap-10 text-xl">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn bg-[#1DD10026] lg:text-xl text-[#1DD100] shadow-[#1DD100] lg:pl-7 lg:pr-6">Bus <img src="images/bus-icon.png" alt=""></a>
+                </div>
+              </div>
+        </nav>
+        <!-- banner section -->
+        <div class="mt-5">
+            <div class="hero h-[550px] lg:rounded-3xl" style="background-image: url(images/banner.png);">
+                <div class="hero-overlay bg-opacity-30"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div>
+                        <h1 class="text-6xl font-bold mb-7">End-to-End Travel with<br><span class="text-[#1DD100]">P Paribahan</span></h1>
+                        <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The<br> integrated testing features allow for a streamlined .</p>
+                        <button id="" class="border-none pt-5 pb-5 pr-8 pl-8 rounded-xl font-bold text-xl text-black bg-orange-500 hover:bg-orange-700">Buy Tickets</button>
+                    </div>
+                </div>
+            </div> 
+            <div class="flex flex-col lg:flex-row gap-16 justify-center items-center">
+                <!-- first -->
+                <div class="flex justify-center items-center gap-3 rounded-3xl bg-slate-200 w-80 h-32">
+                    <div>
+                        <div><img src="images/people.png" alt=""></div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-4xl font-inter">500K+</h3>
+                        <p>Registered users</p>
+                    </div>
+                </div>
+                <!-- second -->
+                <div class="flex justify-center items-center gap-3 rounded-3xl bg-slate-200 w-80 h-32">
+                    <div>
+                        <div><img src="icon/ticket-cupon.svg" alt=""></div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-4xl font-inter">1.7lacks</h3>
+                        <p>Tickets sold</p>
+                    </div>
+                </div>
+                <!-- third -->
+                <div class="flex justify-center items-center gap-3 rounded-3xl bg-slate-200 w-80 h-32">
+                    <div>
+                        <div><img src="icon/Rental Partners.svg" alt=""></div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-4xl font-inter">80K+</h3>
+                        <p>Rental partners</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    <main class="lg:max-w-[1280px] m-auto">
+        <div class="text-center mt-14">
+            <h3 class="text-5xl font-bold mb-12">Best offers for you</h3>
+           <div class="flex flex-col lg:flex-row gap-7 justify-center">
+            <!-- discount 15% -->
+                <div class="w-[100%] h-[220px] bg-[#FFBF0F] flex rounded-3xl">
+                    <div class="m-12 font-inter space-y-2">
+                        <h3 class=" text-5xl font-black">15% OFF</h3>
+                        <h3 class="text-xl font-semibold">on your next purchase</h3>
+                        <p class="text-xl font-medium text-[#03071266]">use by March 2024</p>
+                    </div>
+                    <img class="ml-7" src="icon/cupon-devider.svg" alt="">
+                    <div class="mt-16 ml-4 space-y-2">
+                        <h3 class="text-4xl font-bold">NEW15</h3>
+                        <p class="text-xl font-medium text-[#03071266]">Coupon Code</p>
+                    </div>
+                </div>
+            <!--discount 20% -->
+                <div class="w-[100%] h-[220px] bg-[#F78C9C] flex rounded-3xl">
+                    <div class="m-11 mt-14 font-inter space-y-2">
+                        <h3 class=" text-5xl font-black">20% OFF</h3>
+                        <h3 class="text-xl font-semibold">on your next purchase</h3>
+                        <p class="text-xl font-medium text-[#03071266]">use by March 2024</p>
+                    </div>
+                    <img class="ml-3" src="icon/cupon-devider.svg" alt="">
+                    <div class="mt-16 ml-4 space-y-2">
+                        <h3 class="text-4xl font-bold">Couple 20</h3>
+                        <p class="text-xl font-medium text-[#03071266]">Coupon Code</p>
+                    </div>
+                </div>
+           </div>
+           <button class="btn btn-outline btn-warning mt-16">See All Offers</button>
+        </div>
+        <!-- P.H Paribahan Section -->
+        <div class=" mt-20">
+            <div class="text-center">
+                <h3 class="text-5xl font-bold">P.H Paribahan</h3>
+                <p class="font-inter text-xl mt-6">Yes, you can run unit tests and view the results directly within the app. The integrated<br> testing features allow for a streamlined .</p>
+            </div>
+            <div>
+                <div class="flex flex-col lg:flex-row gap-6 justify-between">
+                    <div class="flex  items-center gap-3">
+                        <img src="images/bus-logo.png" alt="">
+                       <div>
+                        <h3 class="text-3xl font-bold">Greennline Paribahan</h3>
+                        <p class="font-inter">Coach-009-WEB ! AC_Business</p>
+                       </div>
+                    </div>
+                    <div class=" bg-[#1DD10026] w-44 rounded-lg">  
+                        <h3 class="flex items-center gap-1 p-3 font-inter font-medium text-[#1DD100]"><img src="images/seat-green.png" alt=""><span>40</span>Seats left</h3>
+                    </div>    
+                </div>
+                <div class="font-semibold border-dashed">
+                    <h3 class="text-[#03071299]">Route</h3>
+                    <h3>Dhaka-Sylhet</h3>
+                    
+                </div>
+                <img class="text-[#1DD100]" src="icon/cupon-devider.svg" alt="">
+                <div></div>
+            </div>
+        </div>
+    </main>
+    <footer class="w-[100%] h-[457px] bg-[#030712] m-auto">
+        <div class="p-8 lg:p-28 items-center">
+            <div class="flex flex-col lg:flex-row justify-between mb-14">
+                <div class="space-y-3">
+                    <h3 class="text-white text-4xl font-extrabold">P-Ticket</h3>
+                    <p class="font-inter text-[#FFFFFFCC]">P-Ticket is a digital platform to make your<br> daily commuting better.</p>
+                </div>
+                <div class="space-y-3">
+                    <h3 class="text-white text-xl font-semibold">Download our app</h3>
+                    <img src="icon/google-play.svg" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="font-inter flex flex-col lg:flex-row justify-between mt-7">
+                <p class="text-[#FFFFFFB3]">@all rights reserved, P-Ticket services limited.2024</p>
+                <div class="text-white font-medium space-x-7">
+                    <a href="#">Term & condition</a>
+                    <a href="#">Return & refund policy</a>
+                    <a href="#">Privacy policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
