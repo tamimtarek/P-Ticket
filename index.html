@@ -127,9 +127,9 @@
         <div class=" mt-20 bg-[#F7F8F8] rounded-t-[90px] p-9">
             <div class="text-center">
                 <h3 class="text-5xl font-bold">P.H Paribahan</h3>
-                <p class="font-inter text-xl mt-6">Yes, you can run unit tests and view the results directly within the app. The integrated<br> testing features allow for a streamlined .</p>
+                <p class="font-inter text-xl text-[#03071299] mt-6">Yes, you can run unit tests and view the results directly within the app. The integrated<br> testing features allow for a streamlined .</p>
             </div>
-            <div class="flex flex-col lg:flex-row bg-white gap-5 p-5 rounded-3xl">
+            <div class="flex flex-col lg:flex-row bg-white gap-5 mt-10 p-5 rounded-3xl">
                 <div class="lg:w-[75%]">
                     <div class="flex flex-col lg:flex-row gap-6 justify-between mt-8 mb-7">
                         <div class="flex  items-center gap-3">
@@ -184,6 +184,12 @@
                     <div class="space-y-16 mt-5">
                         <h3>A</h3>
                         <h3>B</h3>
+                        <h3>C</h3>
+                        <h3>D</h3>
+                        <h3>E</h3>
+                        <h3>F</h3>
+                        <h3>G</h3>
+                        <h3>H</h3>
                     </div>
                     <div class="grid grid-cols-2 lg:grid-cols-4 gap-7 mt-5 font-inter text-[#03071280]">
                         <button class="btn bg-[#F7F8F8] w-28 h-14">A1</button>
@@ -194,6 +200,30 @@
                         <button class="btn bg-[#F7F8F8] w-28 h-14">B2</button>
                         <button class="btn bg-[#F7F8F8] w-28 h-14">B3</button>
                         <button class="btn bg-[#F7F8F8] w-28 h-14">B4</button>
+                        <button class="btn bg-[#F7F8F8] w-28 h-14">C1</button>
+                        <button class="btn bg-[#F7F8F8] w-28 h-14">C2</button>
+                        <button class="btn bg-[#F7F8F8] w-28 h-14">C3</button>
+                        <button class="btn bg-[#F7F8F8] w-28 h-14">C4</button>
+                        <button class="btn bg-[#F7F8F8] w-28 h-14">D1</button>
+                        <button class="btn bg-[#F7F8F8] w-28 h-14">D2</button>
+                        <button class="btn bg-[#F7F8F8] w-28 h-14">D3</button>
+                        <button class="btn bg-[#F7F8F8] w-28 h-14">D4</button>
+                        <button class="btn bg-[#F7F8F8] w-28 h-14">E1</button>
+                        <button class="btn bg-[#F7F8F8] w-28 h-14">E2</button>
+                        <button class="btn bg-[#F7F8F8] w-28 h-14">E3</button>
+                        <button class="btn bg-[#F7F8F8] w-28 h-14">E4</button>
+                        <button class="btn bg-[#F7F8F8] w-28 h-14">F1</button>
+                        <button class="btn bg-[#F7F8F8] w-28 h-14">F2</button>
+                        <button class="btn bg-[#F7F8F8] w-28 h-14">F3</button>
+                        <button class="btn bg-[#F7F8F8] w-28 h-14">F4</button>
+                        <button class="btn bg-[#F7F8F8] w-28 h-14">G1</button>
+                        <button class="btn bg-[#F7F8F8] w-28 h-14">G2</button>
+                        <button class="btn bg-[#F7F8F8] w-28 h-14">G3</button>
+                        <button class="btn bg-[#F7F8F8] w-28 h-14">G4</button>
+                        <button class="btn bg-[#F7F8F8] w-28 h-14">H1</button>
+                        <button class="btn bg-[#F7F8F8] w-28 h-14">H2</button>
+                        <button class="btn bg-[#F7F8F8] w-28 h-14">H3</button>
+                        <button class="btn bg-[#F7F8F8] w-28 h-14">H4</button>
                     </div>
                 </div>
                 </div>
@@ -236,7 +266,26 @@
                                 <h3 class="font-inter text-[#030712] font-medium">Email ID</h3>
                                 <input id="email" type="email" placeholder="Enter your email id" class="input input-accent border-[#0307121A] mt-3 w-[100%]" required />
                             </label>
-                            <button class="btn bg-[#1DD100] text-white text-xl font-extrabold">Next</button>
+                            <!-- <button class="btn bg-[#1DD100] text-white text-xl font-extrabold">Next</button> -->
+                            <div>
+                                <!-- Open the modal using ID.showModal() method -->
+                                <button class="btn bg-[#1DD100] text-white text-xl font-extrabold w-[100%]" onclick="my_modal_5.showModal()">Next</button>
+                                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                                <div class="modal-box flex flex-col items-center p-10 font-inter gap-5">
+                                    <img src="images/success.png" alt="">
+                                    <h3 class="font-bold text-2xl text-[#27AE60]">SUCCESS</h3>
+                                    <p class="text-[#4A4A4A] font-semibold text-center">Thank You for Boking Our Bus Seats 
+                                    We are working <br>hard to find the best service and deals for you.</p>
+                                    <p class="text-[#1DD100]">Shortly you will find a confirmation in your email.</p>
+                                    <div class="modal-action">
+                                    <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn bg-[#27AE60] w-[300px] text-white font-medium rounded-full">Continue</button>
+                                    </form>
+                                    </div>
+                                </div>
+                                </dialog>
+                            </div>
                             <div class="flex justify-around">
                                 <a href="#">Terms and Conditions</a>
                                 <a href="#">Cancellation Policy</a>
