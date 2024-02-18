@@ -51,7 +51,7 @@
                     <div>
                         <h1 class="text-6xl font-bold mb-7">End-to-End Travel with<br><span class="text-[#1DD100]">P Paribahan</span></h1>
                         <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The<br> integrated testing features allow for a streamlined .</p>
-                        <button id="buy-ticket" class="btn border-none w-48 h-14 font-bold text-xl text-black bg-orange-500 hover:bg-orange-700">Buy Tickets</button>
+                        <button id="buy-ticket" onclick="transferOtherSection('paribahan')" class="btn border-none w-48 h-14 font-bold text-xl bg-[#1DD100] text-black">Buy Tickets</button>
                     </div>
                 </div>
             </div> 
@@ -190,6 +190,8 @@
                         <h3>F</h3>
                         <h3>G</h3>
                         <h3>H</h3>
+                        <h3>I</h3>
+                        <h3>J</h3>
                     </div>
                     <div id="seat-container" class="grid grid-cols-2 lg:grid-cols-4 gap-7 mt-5 font-inter text-[#03071280]">
                         <button id="A1" class="btn bg-[#F7F8F8] w-28 h-14">A1</button>
@@ -224,6 +226,14 @@
                         <button id="H2" class="btn bg-[#F7F8F8] w-28 h-14">H2</button>
                         <button id="H3" class="btn bg-[#F7F8F8] w-28 h-14">H3</button>
                         <button id="H4" class="btn bg-[#F7F8F8] w-28 h-14">H4</button>
+                        <button id="I1" class="btn bg-[#F7F8F8] w-28 h-14">I1</button>
+                        <button id="I2" class="btn bg-[#F7F8F8] w-28 h-14">I2</button>
+                        <button id="I3" class="btn bg-[#F7F8F8] w-28 h-14">I3</button>
+                        <button id="I4" class="btn bg-[#F7F8F8] w-28 h-14">I4</button>
+                        <button id="J1" class="btn bg-[#F7F8F8] w-28 h-14">J1</button>
+                        <button id="J2" class="btn bg-[#F7F8F8] w-28 h-14">J2</button>
+                        <button id="J3" class="btn bg-[#F7F8F8] w-28 h-14">J3</button>
+                        <button id="J4" class="btn bg-[#F7F8F8] w-28 h-14">J4</button>
                     </div>
                 </div>
                 </div>
@@ -233,7 +243,7 @@
                     <hr>
                     <div class="bg-[#F7F8F8] mt-8 rounded-xl p-5">
                         <div class="flex justify-between font-inter text-black font-medium mb-4">
-                            <h3>Seat<span id="seat-count" class="bg-[#1DD100] text-white"></span></h3>
+                            <h3>Seat<span id="seat-count" class="bg-[#1DD100] rounded-md text-xs text-white">0</span></h3>
                             <h3>Class</h3>
                             <h3>Price</h3>
                         </div>
@@ -252,9 +262,9 @@
                             <h3>Total Price</h3>
                             <h3>BDT<span id="tatal-price"></span></h3>
                         </div>
-                        <div class="w-[100%]">
+                        <div id="coupon-container" class="w-[100%]">
                             <input id="coupon" type="text" placeholder="Have any copupon?" class="input input-accent absolute border-none mt-3 w-[58%] lg:w-[31%]" />
-                            <button id="apply" class="btn btn-warning relative ml-36 lg:ml-80 mt-3 pl-7 pr-7">Apply</button>
+                            <button id="apply" disabled class="btn btn-warning relative ml-36 lg:ml-80 mt-3 pl-7 pr-7">Apply</button>
                         </div>
                         <div class="flex justify-between font-inter text-black font-medium mt-5">
                             <h3>Grand Total</h3>
@@ -272,12 +282,12 @@
                             </label>
                             <label for="email">
                                 <h3 class="font-inter text-[#030712] font-medium">Email ID</h3>
-                                <input id="email" type="email" placeholder="Enter your email id" class="input input-accent border-[#0307121A] mt-3 w-[100%]" required />
+                                <input id="email" type="email" placeholder="Enter your email id" class="input input-accent border-[#0307121A] mt-3 w-[100%]" />
                             </label>
                             <!-- <button class="btn bg-[#1DD100] text-white text-xl font-extrabold">Next</button> -->
                             <div>
                                 <!-- Open the modal using ID.showModal() method -->
-                                <button class="btn bg-[#1DD100] text-white text-xl font-extrabold w-[100%]" onclick="my_modal_5.showModal()">Next</button>
+                                <button disabled id="next-btn" class="btn bg-[#1DD100] text-white text-xl font-extrabold w-[100%]" onclick="my_modal_5.showModal()">Next</button>
                                 <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                                 <div class="modal-box flex flex-col items-center p-10 font-inter gap-5">
                                     <img src="images/success.png" alt="">
