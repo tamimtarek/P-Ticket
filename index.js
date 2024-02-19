@@ -80,7 +80,7 @@ for(const btn of btns){
 
 function transferOtherSection (id){
     const buyBtn = document.getElementById(id);
-    buyBtn.scrollIntoView({begavior: 'smooth'});
+    buyBtn.scrollIntoView({behavior: 'smooth'});
 }
 
 function setInnerText (id, value){
