@@ -1,5 +1,6 @@
 let seatCount = 1;
 let totalPrice = 0;
+const array = [];
 
 const buyBtn = document.getElementById("buy-ticket");
 const ph = document.getElementById("paribahan");
@@ -7,7 +8,15 @@ const ph = document.getElementById("paribahan");
 const seats = document.getElementById("seat-container");
 const btns = seats.getElementsByClassName("btn");
 for(const btn of btns){
-    btn.addEventListener("click", function(){
+    btn.addEventListener("click", function(e){
+        const vari = e.target;
+        if(array.includes(vari)){
+            alert("You Have Already Selected")
+            return
+        }
+        else{
+            array.push(vari)
+        }
         const h3 = document.createElement("h3");
         const h2 = document.createElement("h3");
         h2.innerText = ['Economoy'];
@@ -67,6 +76,7 @@ for(const btn of btns){
         })
     })
 }
+
 
 function transferOtherSection (id){
     const buyBtn = document.getElementById(id);
