@@ -22,7 +22,6 @@ for(const btn of btns){
         h2.innerText = ['Economoy'];
         const h1 = document.createElement("h3");
         const sum = totalPrice + 550;
-        totalPrice += sum;
         h1.innerText = ['BDT 550'];
         h3.innerText = seatCount+ ". "+btn.innerText; 
         if(seatCount === 1){
@@ -44,6 +43,7 @@ for(const btn of btns){
         setInnerText("available", availableSeat);
         setInnerText("tatal-price", sum);
         setInnerText("grand-total", sum);
+        totalPrice += 550;
         seatCount++;
         const titlaContainer = document.getElementById("title-count");
         const seatTitle = document.getElementById("economic");
